@@ -6,7 +6,7 @@
         <remote name="arm-gitlab"       fetch="https://git.gitlab.arm.com/" />
 
         <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="xen-troops/optee_build.git" revision="zephyr-test">
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
         </project>
 
@@ -16,7 +16,5 @@
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v8.1.2" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.10" clone-depth="1" remote="tfo" />
         <project path="hafnium"   name="hafnium/hafnium.git"           revision="refs/tags/v2.10" clone-depth="1" remote="tfo" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2023.07.02" remote="u-boot" clone-depth="1" />
-        <project path="xen"                 name="git-http/xen.git"                         revision="refs/tags/RELEASE-4.18.0" clone-depth="1" remote="xenbits" />
         <project path="SCP-firmware"         name="firmware/SCP-firmware.git"             revision="3d1b98e38686889c5a7b1d91a8c0f22fcfedbbf7" remote="arm-gitlab" clone-depth="1" />
 </manifest>
